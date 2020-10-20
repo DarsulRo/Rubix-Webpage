@@ -1,0 +1,129 @@
+#nav-holder{
+    background-color: var(--mainred);
+    position: sticky;
+}
+#mobile-nav-holder{
+    position: sticky;
+}
+section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1.title{
+    font-size: 3rem;
+    color: var(--mainblack);
+    margin: 3rem 0;
+    text-align: center;
+}
+#follow h1{
+    border-bottom: solid rgb(255, 36, 102) 0.4rem;
+}
+#follow .social-media{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#follow .social-media > a{
+    margin: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+    padding: 5x;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.facebook{
+    border: solid 0.3rem var(--facebook);
+}
+.instagram{
+    border: solid 0.3rem  var(--instagram);
+}
+.reddit{
+    border: solid 0.3rem var(--reddit);
+}
+.discord{
+    border: solid 0.3rem var(--discord);
+}
+.youtube{
+    border: solid 0.3rem var(--youtube);
+}
+.github{
+    border: solid 0.3rem var(--github);
+}
+#follow .social-media a img{
+    height: 50px;
+    margin: 0.5rem 1rem;
+}
+#follow .social-media h3{
+    margin: 0 1rem;
+    margin-right: 2rem;
+    color: var(--mainblack);
+    font-size: 1.5rem;
+}
+
+#form-section h1{
+    border-bottom: solid 0.4rem orangered;
+}
+form{
+    margin: 0 5%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    width: 40rem;
+}
+form label{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+form input{
+    margin-bottom: 2rem;
+}
+input{
+    box-sizing: content-box;
+    padding: 0.66rem;
+    resize: both;
+    width: 95%;
+    max-width: 95%;
+    font-size: 1rem;
+}
+textarea{
+    box-sizing: content-box;
+    padding: 0.66rem;
+    width: 95%;
+    max-width: 95%;
+
+    min-height: 7rem;
+    height: 7rem;
+    max-height: 15rem;
+    resize: vertical;
+    font-size: 1rem;
+}
+form input[type="submit"]{
+    padding: 0;
+    margin-top: 2rem;
+    width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 4rem;
+}
+#location h1{
+    border-bottom: solid 0.4rem rgb(63, 190, 63);
+}
+#map{
+    margin: 2rem 0;
+}
+#map iframe{
+    box-shadow: 0 0 50px 2px gray;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 800px;
+    height: 400px;
+}

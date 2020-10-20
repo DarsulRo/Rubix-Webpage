@@ -1,0 +1,82 @@
+
+.card *, .card:hover *{
+    transition: all 0.4s ease 0s;
+}
+.card:hover .card-image-overlay, .card .card-image-overlay{
+    transition: all 0.4s ease 0s;
+}
+
+h1.mentor{
+    border-bottom: solid 0.4rem var(--mentor);
+}
+.card:hover .mentor.card-image-overlay{
+    bottom:0;
+    background-color: var(--mentor);
+}
+.card:hover .mentor.card-info-border{
+    border-top-color: var(--mentor);
+}
+.card:hover .card-name.mentor{
+    color:var(--mentor);
+    
+}
+
+
+
+h1.mainteam{
+    border-bottom: solid 0.4rem var(--mainteam);
+}
+.card:hover .card-image-overlay.mainteam{
+    background-color: var(--mainteam);
+}
+.card:hover .mainteam.card-info-border{
+    border-top-color: var(--mainteam);
+}
+.card:hover .card-name.mainteam{
+    color:var(--mainteam);
+}
+
+
+
+h1.junior{
+    border-bottom: solid 0.4rem var(--junior);
+}
+.card:hover .card-image-overlay.junior{
+    background-color: var(--junior);
+}
+.card:hover .card-name.junior{
+    color:var(--junior);
+}
+.card:hover .junior.card-info-border{
+    border-top-color: var(--junior);
+}
+
+
+
+h1.volunteer{
+    border-bottom: solid 0.4rem var(--volunteer)
+}
+.card:hover .card-image-overlay.volunteer{
+    background-color: var(--volunteer);
+}
+.card:hover .card-name.volunteer{
+    color:var(--volunteer);
+}
+.card:hover .volunteer.card-info-border{
+    border-top-color: var(--volunteer);
+}
+
+
+
+h1.retired{
+    border-bottom: solid 0.4rem var(--retired)
+}
+.card:hover .card-image-overlay.retired{
+    background-color: var(--retired);
+}
+.card:hover  .card-name.retired{
+    color:var(--retired);
+}
+.card:hover .retired.card-info-border{
+    border-top-color: var(--retired);
+}

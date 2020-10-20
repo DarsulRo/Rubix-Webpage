@@ -1,0 +1,121 @@
+#nav-holder{
+    background-color: var(--mainred);
+    position: sticky;
+}
+#mobile-nav-holder{
+    position: sticky;
+}
+main.main{
+    padding: 3rem 5%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+section.avatar{
+    min-width: 225px;
+    width: 225px;
+    height: 300px;
+    background-color: rgba(127, 255, 212, 0.979);
+    position: relative;
+    
+    margin-bottom: 2rem;
+}
+section.avatar img{
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    border-radius: 15px;
+}
+
+section.content{
+    width: calc(100% - 225px);
+    min-width: 300px;
+    padding: 0 5%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.content .badges{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.badges .role{
+    background-color: orange;
+    border-radius: 1rem;
+    padding: 0.3rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+.badges .role h4{
+    margin-left: 0.5rem;
+    color:var(--mainwhite);
+    font-weight: 200;
+    
+}
+
+.name{
+    font-size: 2rem;
+    margin-top:4rem;
+    font-weight: 500;
+}
+.description{
+    margin-top: 2rem;
+    width: 100%;
+    font-weight: 200;
+    border-bottom: solid 0.3rem var(--mainblack);
+    padding-bottom: 1rem;
+}
+
+.LINKS{
+    margin-top: 5rem;
+}
+.links{
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+.link{
+    margin: 0.4rem;
+    position: relative;
+}
+.link::after{
+    content: '';
+    width: 0%;
+    height: 0.2rem;
+    left: 50%;
+    bottom: -0.2rem;
+    position: absolute;
+    transition: all 0.2s ease;
+    background-color: var(--mainblack);
+    border-radius: 10px;
+}
+.link:hover::after{
+    left: 0%;
+    width: 100%;
+    background-color: black;
+}
+.link img{
+    height: 1.25rem;
+    margin-right: 0.25rem;
+}
+.link h4{
+    font-size: 1.5rem;
+    color:var(--mainblack)
+}
+.link:hover h4{
+    transition: color 0.2s ease 0s;
+    color:black;
+}
+
+@media (orientation: portrait){
+    section.content{
+        width:100%;
+    }
+    main{
+        flex-wrap: wrap;
+    }
+    .content .badges{
+        width: 100%;
+    }
+}

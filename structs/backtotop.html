@@ -1,0 +1,52 @@
+<style>
+    #backtotop {
+        right: -70px;
+        opacity: 0;
+        position: fixed;
+        bottom: 20px;
+        border-radius: 3px;
+        transition: opacity 0.5s ease 0s,
+            right 0.5s ease 0s;
+        z-index: 500;
+    }
+
+    #backtotop img {
+        cursor: pointer;
+        width: 66px;
+        height: 66px;
+        object-fit: contain;
+        transform: rotate(180deg);
+    }
+</style>
+<div id="backtotop" onclick='scrollToTop()'>
+    <a >
+        <img src="../res/img/backtotop_reversed.svg" alt="">
+    </a>
+</div>
+<script>
+    
+    window.addEventListener('scroll', function () {
+        let scrolled = window.scrollY
+        let backBtn = document.getElementById('backtotop')
+
+        if (scrolled > 1000) {
+            backBtn.style.right = "20px"
+            backBtn.style.opacity = '100%'
+        }
+        else {
+            backBtn.style.opacity = '0%'
+            backBtn.style.right = "-70px"
+        }
+    })
+
+
+    const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+            window.requestAnimationFrame(scrollToTop);
+            window.scrollTo(0, c - c / 4);
+            
+        }
+    };
+    
+</script>

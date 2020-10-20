@@ -1,0 +1,109 @@
+@font-face{
+    font-family: "Exo";
+    src: url("../res/Exo2.0-Light.otf")
+}
+:root{
+    --mainred:rgb(225, 0, 0);
+    --mainwhite: rgb(245,245,245);
+    --secondwhite: rgb(225,225,225);
+    --mainblack: rgb(40,40,40);
+
+    --facebook: #3C5898;
+    --instagram: #E1306C;
+    --youtube: #FF0000;
+    --discord: #7289da;
+    --github: #171515;
+    --reddit: #ff4301;
+
+    --mentor: rgb(153, 39, 153);
+    --mainteam: var(--mainred);
+    --junior: rgb(0, 201, 141);
+    --volunteer: rgb(34, 190, 34);
+    --retired: rgb(255, 130, 13);
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    margin:0;
+    padding: 0;
+    font-family: Exo;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: var(--mainblack);
+}
+html{
+
+    font-size: large;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--mainwhite);
+    align-items: center;
+}
+#overlay{
+    display: flex; 
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    background-color: var(--mainred);  
+    z-index: 9999999;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    transition: background-color 0.3s ease 0s,
+                color 0.3s ease 0s;
+}
+
+
+
+
+@media (orientation: portrait){
+    html{
+        font-size: medium;
+    }
+    #mobile-nav-holder{
+        display: block;
+        top:0;
+        width: 100%;
+        z-index: 100;
+         
+    }
+    #nav-holder{
+        display: none;
+    }
+    #header-holder{
+        display: none;
+    }
+    #footer-holder{
+        width: 100%;
+    }
+}
+@media (orientation: landscape){
+    #header-holder{
+        width: 100%;
+    }
+    #nav-holder{
+        z-index: 100;
+        width: 100%;
+        top:0;
+        display: block;
+    }
+    #mobile-nav-holder{
+        display: none;
+    }
+    #footer-holder{
+        width: 100%;
+    }
+}

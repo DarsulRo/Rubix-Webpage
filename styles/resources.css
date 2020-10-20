@@ -1,0 +1,285 @@
+#nav-holder{
+    background-color: var(--mainred);
+    position: sticky;
+}
+#mobile-nav-holder{
+    position: sticky;
+}
+main{
+    width: 100%;
+    padding: 4rem 5%;
+}
+main *{
+    font-weight: 500;
+}
+section{
+    width: 100%;
+    margin: 1rem 0;
+    border: solid 1px gray;
+    border-top: none;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.24);
+}
+.dropper{
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    border-radius: 2px;
+    border-bottom: solid 0.4rem;
+}
+.dropper h2{
+    color: var(--mainwhite);
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+}
+.dropper img{
+    transition: all 0.3s ease 0s;
+    transform: rotate(180deg);
+    height: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+.droppedArrow{
+    transition: all 0.3s ease 0s;
+    transform: rotate(90deg) !important;
+}
+.scroll-icon{
+    z-index: 19;
+    position: absolute;
+    top:10px;
+    left: 10px;
+    height: 3rem;
+}
+.content{
+    max-height: 0;
+    transition: max-height 0.5s ease-out 0s;
+    width: 100%;
+    overflow: hidden;
+}
+.showContent{
+    transition: max-height 0.5s ease-in 0s;
+    max-height: 1500px;
+}
+
+
+#NOTEBOOK .margin-box{
+    width: 100%;
+    padding: 4rem 0;
+}
+#NOTEBOOK .content .desc{
+    font-weight: normal;
+    text-align: justify;
+    margin: 0 5%;
+}
+.content .notebooks{
+    margin-top: 3rem;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 100%;
+    align-items: flex-start;
+}
+#NOTEBOOK .content .cards-scroller{
+    height: 100%;
+    display: flex;
+    width: fit-content;
+    min-width: 100%;
+    justify-content: space-evenly;
+}
+.card{
+    margin: 2rem;
+    min-width: 15rem;
+    width: 15rem;
+    height: 25rem;
+    position: relative;
+    padding: 1rem;
+    justify-content: space-between;
+    border: solid 0.2rem var(--mainblack);
+    border-radius: 3px;
+    box-shadow: 0 5px 10px 1px rgba(128, 128, 128, 0.288);
+    transition: all 0.3s ease 0s;
+}
+.card *{
+    user-select: none;
+}
+.card:hover{
+    box-shadow: 0 5px 10px 1px rgba(32, 32, 32, 0.349);
+}
+.card > h4{
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.card .image{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 2rem;
+}
+.card .image > img{
+    max-width: 80%;
+    max-height: 100%;
+}
+.card .text{
+    flex-grow: 1;
+    color: var(--mainblack);
+    border-top: solid 0.3rem var(--mainblack);
+    padding-top: 0.5rem;
+    justify-content: space-evenly;
+}
+.card .text h4{
+    font-weight: 500;
+    text-align: center;
+}
+.card .control{
+    width: 100%;
+    justify-content: space-between;
+}
+.control a{
+    margin: 0 0.2rem;
+    flex-grow: 1;
+    padding: 0.3rem;
+    background-color: rgb(0, 100, 255);
+    border-radius: 5px;
+    color: var(--mainwhite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.control img{
+    height: 1rem;
+    margin-left: 0.2rem;
+}
+.control.valid a:hover{
+    cursor: pointer;
+    background-color: rgb(0, 80, 235);
+}
+
+/*CREOOOOOOOOOOOO*/
+
+#CREO .margin-box{
+    padding: 4rem 5%;
+    width: 100%;
+}
+#CREO .flex-row{
+    justify-content: space-between;
+}
+#CREO .season-title{
+    align-self: flex-start;
+    margin-bottom: 2rem;
+}
+#CREO .season-section{
+    width: 100%;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+#CREO .season-section .desc{
+    min-width: 15rem;
+}
+#CREO .robot-card{
+    box-sizing: border-box;
+    padding: 1rem;
+    min-width: 300px;
+    width: 300px;
+    border-radius: 3px;
+    flex-grow: 1;
+}
+#CREO img.robot{
+    width: 200px;
+    margin: 0 2rem;
+}
+#CREO .robot-card a{
+    margin-top: 2rem;
+    background-color: orange;
+    text-shadow: 1px 1px var(--mainblack);
+    color: var(--mainwhite);
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: larger;
+    font-weight: bold;
+    align-self: flex-start;
+}
+#CREO .robot-card a:hover{
+    background-color: rgb(240, 140, 0);
+}
+
+#CREO .content h2{
+    font-weight: 500;
+}
+#CREO .content .info{
+    margin-top: 3rem;
+    border-bottom: solid 1px black;
+    text-align: center;
+}
+.linebreak{
+    width: 100%;
+    height: 0.3rem;
+    background-color: rgb(78, 78, 78);
+    border-radius: 2px;
+    margin: 4rem 0;
+}
+
+
+#ASSETS .margin-box{
+    width: 100%;
+    height: 100%;
+    padding: 4rem 5%;
+    flex-wrap: wrap-reverse;
+}
+#ASSETS .desc-box{
+    min-width: 300px;
+    width: 300px;
+    flex-grow: 1;
+    margin: 2rem 0;
+    align-items: flex-start;
+    padding: 1rem;
+}
+#ASSETS .desc-box a{
+    padding: 0.75rem;
+    color: var(--mainwhite);
+    background-color: var(--mainred);
+    border-radius: 5px;
+    text-shadow: 1px 1px black;
+    font-size: larger;
+    width: 200px;
+    margin-top: 2rem;
+}
+#ASSETS .desc-box a:hover{
+    background-color: red;
+}
+#ASSETS #ASSETS-box{
+    transition: box-shadow 0.5s ease;
+    padding: 1rem;
+    width: 250px;
+    height: 250px;
+    border-radius: 5rem;
+    border: solid 0.2rem var(--mainred);
+}
+#ASSETS #ASSETS-box:hover{
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.274);
+}
+#ASSETS #ASSETS-box h2{
+    color: var(--mainred);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+section#ASSETS .dropper{
+    background-color: var(--mainred);
+    border-color: rgb(192, 0, 0)
+}
+section#CREO .dropper{
+    background-color: orange;
+    border-color: rgb(240, 140, 0);
+}
+section#NOTEBOOK .dropper{
+    background-color: rgb(0, 100, 255);
+    border-color: rgb(0, 80, 235);
+}
+
+section#CODE .dropper{
+    background-color: rgb(1, 158, 1);
+    border-color: green;
+}
