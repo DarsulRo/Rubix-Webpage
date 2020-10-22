@@ -7,7 +7,7 @@ const mongodb = require('mongodb').MongoClient
 var rubixDB
 var members
 
-mongodb.connect('mongodb://localhost:27017',{useNewUrlParser: true, useUnifiedTopology: true},function(err,db){
+mongodb.connect('mongodb+srv://dorin:dorin@cluster.fgr8o.mongodb.net',{useNewUrlParser: true, useUnifiedTopology: true},function(err,db){
     if(err) throw err
     else{
         console.log('Connected to the local Rubix Database')
